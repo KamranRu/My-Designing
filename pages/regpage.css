@@ -1,0 +1,141 @@
+@CHARSET "ISO-8859-1";
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body{
+
+padding:200px;
+padding-left:550px;
+padding-right:550px;
+background: url(images/1353.jpg) no-repeat;
+background-size: cover;
+   
+}
+
+.main_div{
+    text-align:center;
+    font-size:-120px;
+    margin-top:-110px;
+    font-style:helvetica;
+    position: absolute;
+    float: left;
+    margin-right: -470px;
+    margin-left: -60px;
+}
+p1{
+  color: white;
+  font: 50px existence;
+  text-shadow: 0px 0px 10px blue,
+               0px 0px 20px blue,
+               0px 0px 30px blue,
+               0px 0px 40px blue,
+               0px 0px 50px blue,
+               0px 0px 60px blue,
+               0px 0px 70px blue;
+}
+p1:hover{
+  color: black;
+}
+
+h1{
+	text-align:center;
+	color:#0cf5f2;
+	font-size:35px;
+	margin-top:26px;
+	position:top;
+}
+.login {
+
+  width: 550px;
+  height: 450px;
+  position: absolute;
+  top: 48%;
+  left: 40%;
+  margin: -184px 0px 0px -155px;
+  background: rgba(0,0,0,0.3);
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.3),inset 0px 1px 0px rgba(255,255,255,0.07)
+}
+
+input{
+ width:250px;
+ height:30px;
+ background: #8a7f7f;
+ border:2px solid #71f3b1;
+}
+.form-control text {
+	width:255px;
+  height:34px;
+  background: #8a7f7f;
+  border:2px solid #71f3b1;
+}
+
+.form-control text.option{
+  color: #1604fc;
+}
+
+.form-control {
+	width:254px;
+  height:34px;
+  background: #8a7f7f;
+  border:2px solid #71f3b1;
+}
+
+input[type="submit"]{
+  position:center;
+  background: #1d105c;
+  border: 0;
+  width: 250px;
+  height: 40px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.4s linear;
+   
+}
+
+::-webkit-input-placeholder{
+  color: #0e0d0d;
+}
+
+:-ms-input-placeholder{
+  color: #0e0d0d;
+}
+
+::-moz-placeholder{
+   color: #0e0d0d;
+   opacity: 1;
+}
+
+:-moz-placeholder{
+  color: #0e0d0d;
+  opacity: 1;
+}
+
+
+#ph {
+	width:50px;
+  height:34px;
+  background: #8a7f7f;
+	border:2px solid #71f3b1;
+}
+#number {
+	width:455px;
+	height:30px;
+  background: #8a7f7f;
+}
+
+.contenido {
+	width:100%;
+	height:100%;
+	text-align:center;
+}
+.container{
+	margin-top:40px;
+	text-align:center;
+	font-style:italic;
+  color:#dc2525;
+}
