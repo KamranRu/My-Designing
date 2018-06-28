@@ -1,0 +1,197 @@
+*{
+    margin: 0 auto;
+}
+img{
+    border: none;
+}
+body{
+    overflow: hidden;
+    background: url(plane/airport.jpg);
+    background-position: 0 15%;
+    background-size: cover;
+}
+
+.main_div{
+    text-align:center;
+    font-size:-120px;
+    margin-top:200px;
+    font-style:helvetica;
+    position: absolute;
+    float: left;
+    margin-left: 500px;
+   
+}
+p1{
+  color: white;
+  font: 50px existence;
+  text-shadow: 0px 0px 10px red,
+               0px 0px 20px red,
+               0px 0px 30px red,
+               0px 0px 40px red,
+               0px 0px 50px red,
+               0px 0px 60px red,
+               0px 0px 70px red;
+}
+p1:hover{
+  color: black;
+}
+
+
+
+
+#plane1,#plane2{
+    position: absolute;
+}
+#plane1{
+    z-index: 3;
+    top: 0px;
+    left: 1400px;
+    animation: landing linear 10s infinite;
+}
+#plane2{
+    margin-top: -50px;
+}
+@keyframes landing{
+    0%{
+        top: 0px;
+        left: 1500px;
+        transform: scale(.1,.1);
+        -moz-transform:scale(.1,.1);
+    }
+    20%{
+        top: 100px;
+        left: 1100px;
+        transform: scale(.2,.2);
+        -moz-transform:scale(.2,.2);
+    }
+    30%{
+        top: 230px;
+        left: 900px;
+        transform: scale(.3,.3) rotate(8deg);
+        -moz-transform:scale(.3,.3) rotate(8deg);
+        transform-origin: right center;
+    }
+    40%{
+        top: 340px;
+        left: 700px;
+        transform: scale(.32,.32) rotate(6deg);
+        -moz-transform:scale(.32,.32) rotate(6deg);
+        transform-origin: right center;
+    }
+     50%{
+        top: 420px;
+        left: 550px;
+        transform: scale(.35,.35);
+        -moz-transform:scale(.35,.35);
+    }
+    60%{
+        top: 520px;
+        left: 300px;
+        transform: scale(.4,.4) rotate(3deg);
+        -moz-transform:scale(.4,.4) rotate(3deg);
+        transform-origin: right center;
+    }
+    100%{
+        top: 520px;
+        left: -370px;
+        transform: scale(.45,.45);
+        -moz-transform:scale(.45,.45);
+       
+    }
+}
+@-webkit-keyframes landing{
+    0%{
+        top: 0px;
+        left: 1500px;
+        -webkit-transform:scale(.1,.1);
+    }
+    20%{
+        top: 100px;
+        left: 1100px;
+        -webkit-transform:scale(.2,.2);
+    }
+    30%{
+        top: 230px;
+        left: 900px;
+        -webkit-transform:scale(.3,.3) rotate(8deg);
+        transform-origin: right center;
+    }
+     40%{
+        top: 340px;
+        left: 700px;
+        -webkit-transform:scale(.32,.32) rotate(6deg);
+        transform-origin: right center;
+    }
+    50%{
+        top: 420px;
+        left: 550px;
+        -webkit-transform:scale(.35,.35);
+    }
+      60%{
+        top: 520px;
+        left: 300px;
+        -webkit-transform:scale(.4,.4) rotate(3deg);
+        transform-origin: right center;
+    }
+     100%{
+        top: 520px;
+        left: -370px;
+        -webkit-transform:scale(.45,.45);
+    }
+}
+
+#plane2{
+    animation: go linear 10s infinite;
+}
+@keyframes go{
+    0%{
+        top: 0px;
+        left: -200px;
+        transform: scale(.5,.5);
+        -moz-transform:scale(.5,.5);
+    }
+     30%{
+        top: 0px;
+        transform: scale(.45,.45);
+        -moz-transform:scale(.45,.45);
+    }
+     35%{
+        top: 0px;
+        transform: scale(.42,.42);
+        -moz-transform:scale(.42,.42);
+    }
+      40%{
+        top: 0px;
+        transform: scale(.4,.4);
+        -moz-transform:scale(.4,.4);
+    }
+      100%{
+        left: 1400px;
+        transform: scale(.3,.3);
+        -moz-transform:scale(.3,.3);
+    }
+}
+
+@-webkit-keyframes go{
+    0%{
+        top: 0px;
+        left: -200px;
+        -webkit-transform:scale(.5,.5);
+    }
+    30%{
+        top: 0px;
+      -webkit-transform:scale(.45,.45);  
+    }
+    35%{
+        top: 0px;
+      -webkit-transform:scale(.42,.42);  
+    }
+    40%{
+        top: 0px;
+      -webkit-transform:scale(.4,.4);  
+    }
+    100%{
+        left: 1400px;
+      -webkit-transform:scale(.3,.3);  
+    }
+}

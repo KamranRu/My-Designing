@@ -1,0 +1,36 @@
+*{
+    margin: 0 auto;
+}
+img{
+    border: none;
+}
+body{
+    overflow: hidden;
+    background: url(plane/newbackground.jpg);
+    background-size: cover;
+}
+#rocket1{
+    position: absolute;
+    z-index: 3;
+    top: 200px;
+    left: 590px;
+    animation: up linear 5s infinite;
+}
+@keyframes up{
+    0%{
+        top: 0px;
+        transform: translateY(100px);
+    }
+    30%{
+        top: 0px;
+        transform: translateY(-100px);
+    }
+    50%{
+        top: 0px;
+        transform: translateY(-300px);
+    }
+    100%{
+        top: -200px;
+        transform: translateY(-400px);
+    }
+}

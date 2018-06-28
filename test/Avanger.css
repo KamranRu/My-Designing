@@ -1,0 +1,132 @@
+*{
+    margin: 0 auto;
+}
+img{
+    border: none;
+}
+body{
+    overflow: hidden;
+    background: url(avanger/backAv.jpg);
+    background-size: cover;
+}
+#logoAv{
+    position: absolute;
+    z-index: 3;
+    top: 200px;
+    left: 300px;
+    animation: up linear 10s infinite;
+}
+@keyframes up{
+    0%{
+        top: 0px;
+        transform: translateY(700px);
+    }
+    30%{
+        top: 0px;
+        transform: translateY(300px);
+    }
+    50%{
+        top: 0px;
+        transform: translateY(200px);
+    }
+    100%{
+        top: 100px;
+        transform: translateY(100px);
+    }
+}
+#superhero1{
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    left: 1400px;
+    animation: ironfull linear 15s infinite;
+}
+@keyframes ironfull{
+    0%{
+        top: 0px;
+        right: 1500px;
+        transform: translateY(700px);
+        -moz-transform:translateY(700px);
+    }
+    20%{
+        top: 100px;
+        right: 1100px;
+        transform: scale(.2,.2);
+        -moz-transform:scale(.2,.2);
+    }
+    30%{
+        top: 230px;
+        right: 900px;
+        transform: scale(.3,.3) rotate(8deg);
+        -moz-transform:scale(.3,.3) rotate(8deg);
+        transform-origin: right center;
+    }
+    40%{
+        top: 340px;
+        right: 700px;
+        transform: scale(.32,.32) rotate(6deg);
+        -moz-transform:scale(.32,.32) rotate(6deg);
+        transform-origin: right center;
+    }
+     50%{
+        top: 420px;
+        right: 550px;
+        transform: scale(.35,.35);
+        -moz-transform:scale(.35,.35);
+    }
+     60%{
+        top: 520px;
+        right: 300px;
+        transform: scale(.4,.4) rotate(3deg);
+        -moz-transform:scale(.4,.4) rotate(3deg);
+        transform-origin: right center;
+    }
+     100%{
+        top: 520px;
+        right: -370px;
+        transform: scale(.45,.45);
+        -moz-transform:scale(.45,.45);
+    }
+}
+@-webkit-keyframes ironfull{
+    0%{
+        top: 0px;
+        left: 1500px;
+        -webkit-transform: scale(.1,.1);
+    }
+    20%{
+        top: 100px;
+        left: 1100px;
+        -webkit-transform: scale(.2,.2);
+        
+    }
+    30%{
+        top: 230px;
+        left: 900px;
+        -webkit-transform: scale(.3,.3) rotate(8deg);
+        transform-origin: right center;
+    }
+    40%{
+        top: 340px;
+        left: 700px;
+        -webkit-transform: scale(.32,.32) rotate(6deg);
+        transform-origin: right center;
+    }
+     50%{
+        top: 420px;
+        left: 550px;
+        -webkit-transform: scale(.35,.35);
+    }
+     60%{
+        top: 520px;
+        left: 300px;
+        -webkit-transform: scale(.4,.4) rotate(3deg);
+        transform-origin: right center;
+    }
+     100%{
+        top: 520px;
+        left: -370px;
+        
+        -webkit-transform:scale(.45,.45);
+    }
+}

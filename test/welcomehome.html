@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>home page</title>
+<link href="welcomehome.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<meta name ="viewport" content ="width=device-width, initial-scale=1">
+<style type="text/css">
+body{
+	height:100%;
+	width:100%;
+	background-image: url('books/7.jpg');
+	background-size: cover; 
+}
+.main{
+	max-width:800px;
+	margin:auto;
+	margin-top:10px;
+	
+}
+input[type=text]{
+	width:85%;
+	padding:12px;
+	font-family:arial;
+	font-size:17px;
+	border:1px solid #71f3b1;
+	border-right:0;
+	border-radius:5px 0 0 5px;
+	font-style:italic;
+}
+input[type=submit]{
+    position:absolute;
+	width:8%;
+	padding:12px;
+	font-family:arial;
+	font-size:17px;
+	text-shadow:0 0 1px #000;
+	cursor:pointer;
+	text-align:center;
+	color:#fff;
+	border-right:0;
+	background:linear-gradient(#5b2cba,#0078a5);
+	border:1px solid #0076a3;
+}
+input[type=submit]:hover{
+    background:linear-gradient(#c3d12d,#00678e);
+}
+input[type=text]:focus,input[type=submit]:focus{
+    outline:none;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<nav>
+
+<div id="sidebar">
+
+
+		<ul>
+		<li><a href="#">Timeline</a></li>
+		<li><a href="#">Event</a></li>
+		<li><a href="#">Calender</a></li>
+		<li><a href="#">My Profile</a></li>
+		<li><a href="#">My Order</a></li>
+		</ul>
+
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+	</div>
+
+	<div id="block">
+		<img src="images/logo.jpg"width="200" height="80">
+		<ul>
+		<i class="fa fa-user" aria-hidden="true"></i><a href="test.html" id=login> Login</a>
+		</ul>
+
+	</div>	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+		$('#sidebar-btn').click(function(){
+			$('#sidebar').toggleClass('visible');
+		});
+	});
+</script>
+
+
+</nav>
+</div>
+
+<br><br>
+<div class="design">
+<div class="texts-container">
+<h1>SEARCH BOOKS</h1>
+</div>
+</div>
+<div class="main">
+<form>
+<input type ="text" name ="search" placeholder ="Search..">
+<input type ="submit" value ="Search">
+</form>
+</div>
+</div>
+<br><br>
+<div class="container">
+<div class="wrapper">
+<img src="books/1.jpg" alt="" />
+<div class="content">
+    <select class="sectiontohide">
+<option selected value="Select Category">Search by Category</option>
+            <option>Academics</option>
+            <option>Comics</option>
+            <option>Nobel</option>
+            <option>Bio Graphy</option>
+            <option>Granthas</option>
+            <option>Magzinn</option>
+            <option>News</option>
+            <option>Test Papers</option>
+            </select>
+<div class="text_area">
+Search by Category
+</div>
+</div>
+</div>
+<div class="wrapper">
+<img src="books/2.jpg" alt="" />
+<div class="content">
+
+<input type="text" name="BookTitle" placeholder="BookTitle" required>
+
+<div class="text_area1">
+Search by Book Title
+</div>
+</div>
+</div>
+<div class="wrapper">
+<img src="books/3.jpg" alt="" />
+<div class="content">
+<input type="text" name="BookAuther" placeholder="BookAuther" required>
+
+<div class="text_area2">
+Search by Book Author
+</div>
+</div>
+</div>
+<div class="wrapper">
+<img src="books/4.jpg" alt="" />
+<div class="content">
+<input type="text" name="BookAuther" placeholder="BookAuther" required>
+
+<div class="text_area3">
+Search by Book Publisher
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="footer" style="margin-top:300px;text-align:center;font-style:italic" color="#1b1919">
+<p><font size="4">&copy;Design by AEISURIYA TRIPATHY</font></p>
+</div>
+
+</body>
+</html>

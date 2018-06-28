@@ -2,6 +2,7 @@
 <head>
 <title>home page</title>
 <link href="welcomehome.css" rel="stylesheet" type="text/css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 <meta name ="viewport" content ="width=device-width, initial-scale=1">
 <style type="text/css">
@@ -54,18 +55,46 @@ input[type=text]:focus,input[type=submit]:focus{
 <body>
 
 
-<div id="block">
-<div class="navbar navbar-inverse navbar-fixed-top">
+
 <nav>
-<ul>
-<li><a href="#"><img src="svg/cart.svg" alt="icon name" height="15" width="15"> MyCart</a></li>
-<li><a href="#"><img src="svg/account-logout.svg" alt="icon name" height="15" width="15"> LogOut</a></li>
-</ul>
-<div class=logo>
-<ul>
-<li><a href="#">LUV U BUY</a></li>
-</ul>
-</div>
+
+<div id="sidebar">
+
+
+		<ul>
+		<li><a href="#">Timeline</a></li>
+		<li><a href="#">Event</a></li>
+		<li><a href="#">Calender</a></li>
+		<li><a href="#">My Profile</a></li>
+		<li><a href="#">My Order</a></li>
+		</ul>
+
+		<div id="sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+
+	</div>
+
+	<div id="block">
+		<ul>
+		<i class="fa fa-user" aria-hidden="true"></i><a href="#" id=login> Login</a>
+		</ul>
+
+	</div>	
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+		$('#sidebar-btn').click(function(){
+			$('#sidebar').toggleClass('visible');
+		});
+	});
+</script>
+
+
 </nav>
 </div>
 
@@ -136,14 +165,9 @@ Search by Book Publisher
 </div>
 </div>
 
-<div class="main1">
-<form>
-<input type ="submit" value ="Search">
-</form>
-</div>
 
-<div class="container1" style="margin-top:100px;text-align:center;font-style:italic" color="#8000ff">
-<p><font size="4">&copy;Design by KAMRAN ALAM</font></p>
+<div class="footer" style="margin-top:300px;text-align:center;font-style:italic" color="#1b1919">
+<p><font size="4">&copy;Design by AEISURIYA TRIPATHY</font></p>
 </div>
 
 </body>

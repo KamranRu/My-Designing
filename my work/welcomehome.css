@@ -7,7 +7,7 @@
 
 #block{
 	width: 100%;
-	height: 100vh;
+	height: 200vh;
 }
 
 nav{
@@ -43,7 +43,7 @@ nav ul li a{
 .design{
 	max-width:1000px;
 	margin:auto;
-	margin-top:100px;
+	margin-top:200px;
 	
 }
 
@@ -192,10 +192,82 @@ h1{
 	width:68%;
 	margin:0px auto;
 	padding:-150px;
-	margin-top:-177px;
+	margin-top:197px;
 }
 
-.main1{
-	max-width:100px;
-	margin:auto;
-	margin-top:30px;
+#sidebar{
+	background:#151718;
+	width:200px;
+	height:200%;
+	display:block;
+	position:absolute;
+	left:-200px;
+	top:0px;
+	transition:left 0.3s linear;
+
+}
+
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
+}
+
+ul{
+	margin:0px;
+	padding:0px;
+	width: -100px;
+}
+
+ul li{
+	list-style:none;
+}
+
+ul li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:1px solid #111;
+	display:block;
+	width:100px;
+	padding:10px;
+	text-decoration: none;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:30px;
+	height:25px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-60px;
+}
+
+#sidebar-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #0b0b0b;
+	margin: 5px 0px;
+}
+.text{
+	margin-top:500px;
+    text-align:center;
+    float: left;
+    margin-left: 485px;
+}
+
+.footer{
+    text-align:center;
+    font-style:italic;
+    color: #dc2525;
+
+}
+
+#block ul a{
+	color: #1909f0;
+	width:100px;
+	text-decoration: none;
+
+}
